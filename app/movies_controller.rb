@@ -45,7 +45,7 @@ def can_get_the_last_item_in_the_database
 end
 
 def can_get_size_of_the_database
-  (movies)_count
+  (movie)_count
 end
 
 def can_find_the_first_item_from_the_database_using_id
@@ -63,7 +63,7 @@ end
 def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by
   # release date descending
-  
+
 end
 
 def can_be_found_updated_and_saved
