@@ -21,7 +21,7 @@ def can_be_created_with_a_hash_of_attributes
       in_theaters: false
   }
   #movie = Movie.new(attributes)
-  movie = Movie.find_by(attributes)
+  movie = Movie.new.find_by(attributes)
   movie.save
 
 end
