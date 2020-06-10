@@ -23,7 +23,7 @@ def can_be_created_with_a_hash_of_attributes
   #movie = Movie.new(attributes)
   movie = Movie.new.find_by(attributes)
   movie.save
-
+expect(Movie.find_by(attributes)).to eq(movie)
 end
 
 def can_be_created_in_a_block
