@@ -66,7 +66,7 @@ def can_find_using_where_clause_and_be_sorted
 sql = <<-SQL
 "SELECT * FROM movies WHEN release_date > 2002 ORDER BY release_date DESC"
 SQL
-DB[:conn].execute(sql)
+db[:conn].execute(sql)
 end
 
 def can_be_found_updated_and_saved
